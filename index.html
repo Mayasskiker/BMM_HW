@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GenMedia Hub | Generative AI Multimedia</title>
+
+    <!-- favicon pic -->
+    <link rel="icon" type="image/x-icon" href="Assets/imgs/favicon.ico">
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Google Fonts (Inter) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- AOS Animation -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!-- Font aawsome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- CSS file -->
+    <link rel="stylesheet" href="Assets/CSS/style.css">
+
+</head>
+
+<body>
+
+    <!-- Navigation Bar -->
+    <nav class="custom-navbar">
+        <div class="nav-container">
+            <!-- Logo -->
+            <a href="#" class="nav-logo">
+                <img src="Assets/imgs/icon64.ico" alt="Logo" width="36" height="36">
+                <span>GenMedia Hub</span>
+            </a>
+
+            <!-- Hamburger Menu Toggle -->
+            <button class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <!-- Navigation Menu -->
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#hero" class="nav-link">Home</a></li>
+                <li><a href="#about-tools" class="nav-link">The Tools</a></li>
+                <li><a href="#how-it-works" class="nav-link">How It Works</a></li>
+                <li><a href="#portfolio" class="nav-link">AI Portfolio</a></li>
+                <li><a href="#pros-cons" class="nav-link">Pros & Cons</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- HERO SECTION (Main Intro & Video) -->
+    <section id="hero" class="hero-section d-flex align-items-center min-vh-100">
+        <div class="container">
+            <div class="row align-items-center gy-5 text-center text-md-start">
+                <div class="col-12 col-md-6">
+                    <div class="hero-text">
+                        <h1 class="display-4 fw-bold text-dark mb-5">The Future of Digital Creation</h1>
+                        <p class="lead text-muted mb-4">We explore and harness the power of Generative AI to
+                            revolutionize images, audio, and video production.</p>
+                        <a href="#portfolio" class="custom-btn">View AI Gallery</a>
+                    </div>
+                </div>
+
+                <!-- Requirement: Custom Video with Voiceover/Captions -->
+                <div class="col-12 col-md-6">
+                    <div class="hero-video-wrapper">
+                        <div class="video-placeholder">
+                            <video src="Assets/vids/hero_sec_vid.mp4" controls loop muted></video>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- THE TOOLS SECTION (Definitions) -->
+    <section id="about-tools" class="bg-light">
+        <div class="container">
+            <h2 class="section-title">Generative AI Tools</h2>
+            <!-- Bootstrap Grid -->
+            <div class="row g-4">
+
+                <!-- Tool 1 -->
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="custom-card">
+                        <div class="icon-placeholder"><i class="fa-regular fa-images"></i></div>
+                        <h3>Image Generation</h3>
+                        <p class="text-placeholder text-center">
+                            These tools primarily use a process called Diffusion. Imagine starting with a canvas of pure
+                            digital static (noise) and then slowly refining it, pixel by pixel, until a clear image
+                            emerges. The AI uses your text prompt as a guide to "de-noise" the static into a brand-new,
+                            original visual.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Tool 2 -->
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="custom-card">
+                        <div class="icon-placeholder"><i class="fa-solid fa-music"></i></div>
+                        <h3>Audio & Voice</h3>
+                        <p class="text-placeholder text-center">
+                            AI voice tools function through Neural Speech Synthesis. The system breaks down text into
+                            phonetic units and analyzes the emotional context. By training on thousands of hours of
+                            speech, the AI stitches these patterns together to create a fluid, natural-sounding voice.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Tool 3 -->
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="custom-card">
+                        <div class="icon-placeholder"><i class="fa-solid fa-video"></i></div>
+                        <h3>Video Synthesis</h3>
+                        <p class="text-placeholder text-center">
+                            Video AI combines image generation with Temporal Consistency—the logic of how things move
+                            over time. The model treats a video like a series of interconnected frames in a 3D space. It
+                            predicts how light, gravity, and objects should behave from one second to the next.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- HOW IT WORKS SECTION (Diagrams) -->
+    <section id="how-it-works" class="how-it-works-section">
+        <div class="container">
+            <h2 class="section-title">How Generative AI Works</h2>
+            <div class="row align-items-center gy-4 text-center text-md-start">
+                <div class="col-12 col-md-6">
+                    <div class="diagram-text">
+                        <h3>The Principle of Diffusion Models</h3>
+                        <p class="text-placeholder">
+                            They work in two steps: </br>
+                            1. Add noise: A clean image is gradually turned into random noise. </br>
+                            2. Remove noise: The model learns to reverse this process, starting from noise and
+                            rebuilding a clear image step by step. </br>
+                            Result: </br>
+                            The model creates realistic images by turning noise into structure.
+                        </p>
+                    </div>
+                </div>
+                <!-- Requirement: Illustrative Diagrams -->
+                <div class="col-12 col-md-6">
+                    <div class="diagram-image-wrapper">
+                        <img class="diagram-placeholder" src="Assets/imgs/how-it-works-diagram.webp"
+                            alt="Diagram illustrating how generative AI works">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PORTFOLIO SECTION (Optimized WEBP/AVIF Images) -->
+    <section id="portfolio" class="bg-light">
+        <div class="container">
+            <h2 class="section-title">AI Output Gallery</h2>
+            <p class="text-center mb-5 text-muted">Examples of processed and generated multimedia.</p>
+
+            <div class="row g-4">
+                <!-- Requirement: Processed Images in WEBP/AVIF -->
+
+                <!-- Gallery Item 1 -->
+                <div class="col-12 col-md-6 col-lg-6">
+                    <div class="gallery-item">
+                        <div class="gallery-caption">
+                            <img class="image-placeholder item-image" src="Assets/imgs/info_gai.webp"
+                                alt="Explaining how generative artificial intelligence works">
+                            <h4>How generative artificial intelligence systems work</h4>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Gallery Item 2 -->
+                <div class="col-12 col-md-6 col-lg-6">
+                    <div class="gallery-item">
+
+                        <div class="gallery-caption">
+                            <img class="image-placeholder item-image" src="Assets/imgs/neurons.webp"
+                                alt="Similarities between biology and digitization">
+                            <h4>Similarities between biology and digitization</h4>
+
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Gallery Item 3 -->
+                <div class="col-12 col-md-6 col-lg-6">
+                    <div class="gallery-item">
+
+                        <div class="gallery-caption">
+                            <img class="image-placeholder item-image" src="Assets/imgs/old_future_damas.webp"
+                                alt="Integrating the present and the future">
+                            <h4>Integrating the present and the future</h4>
+                        </div>
+                    </div>
+                </div>
+                <!-- Gallery Item 4 -->
+                <div class="col-12 col-md-6 col-lg-6">
+                    <div class="gallery-item">
+
+                        <div class="gallery-caption">
+                            <img class="image-placeholder item-image" src="Assets/imgs/robot.webp"
+                                alt="The blending of reality and science fiction">
+                            <h4>The blending of reality and science fiction</h4>
+
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </section>
+
+    <!-- PROS AND CONS SECTION -->
+    <section id="pros-cons" class="pros-cons-section">
+        <div class="container">
+            <h2 class="section-title">Evaluating Generative AI</h2>
+
+            <div class="row g-4 mb-4">
+                <!-- Pros -->
+                <div class="col-12 col-md-6">
+                    <div class="pros-box h-100" data-aos="zoom-in" data-aos-delay="100">
+                        <h3>Advantages (Pros)</h3>
+                        <ul class="list-unstyled mt-3">
+                            <li><span class="text-placeholder">[ Benefit 1: Rapid prototyping and speed of content
+                                    creation. ]</span></li>
+                            <li><span class="text-placeholder">[ Benefit 2: Lowers the barrier to entry for non-artists.
+                                    ]</span></li>
+                            <li><span class="text-placeholder">[ Benefit 3: Infinite variations and brainstorming
+                                    capabilities. ]</span></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Cons -->
+                <div class="col-12 col-md-6">
+                    <div class="cons-box h-100" data-aos="zoom-in" data-aos-delay="200">
+                        <h3>Disadvantages (Cons)</h3>
+                        <ul class="list-unstyled mt-3">
+                            <li><span class="text-placeholder">[ Drawback 1: Copyright and intellectual property
+                                    concerns. ]</span></li>
+                            <li><span class="text-placeholder">[ Drawback 2: "Hallucinations" or logical errors in
+                                    images. ]</span></li>
+                            <li><span class="text-placeholder">[ Drawback 3: Potential for deepfakes and misinformation.
+                                    ]</span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Brand Showcase -->
+    <section class="brand-footer-section">
+        <div class="container text-center">
+            <div class="full-logo-wrapper">
+                <img src="Assets/imgs/logo.webp" alt="Full Logo" class="full-logo">
+                <p class="brand-tagline">GenMedia Hub delivers AI-crafted visuals, audio and video with a professional
+                    modern edge.</p>
+            </div>
+            <div class="ai-citation mt-4">
+                <p class="mb-0"><strong>Note:</strong> Parts of the textual content in this section were generated using
+                    AI tools (e.g., ChatGPT) as part of the assignment requirements.</p>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 GenMedia Hub. Designed for Multimedia Systems Assignment.</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap 5 JS Bundle (Optional, but good for interactive components later) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+<!-- Bootstrap 5 JS Bundle -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+<!-- AOS Animation (js) -->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init();
+</script>
+
+<!-- Custom Navbar JavaScript -->
+<script>
+    const hamburger = document.getElementById('hamburger');
+    const navMenu = document.getElementById('navMenu');
+    const navLinks = document.querySelectorAll('.nav-link');
+
+    // Toggle menu
+    hamburger.addEventListener('click', () => {
+        navMenu.classList.toggle('active');
+        hamburger.classList.toggle('active');
+    });
+
+    // Close menu when link is clicked
+    navLinks.forEach(link => {
+        link.addEventListener('click', () => {
+            navMenu.classList.remove('active');
+            hamburger.classList.remove('active');
+        });
+    });
+
+    // Close menu when clicking outside
+    document.addEventListener('click', (e) => {
+        if (!e.target.closest('.nav-container')) {
+            navMenu.classList.remove('active');
+            hamburger.classList.remove('active');
+        }
+    });
+</script>
+
+</html>
